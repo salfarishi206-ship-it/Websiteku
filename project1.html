@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Editor</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+}
+
+.card{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.profile{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+h1{
+    margin-top:20px;
+    font-size:38px;
+}
+
+h3{
+    color:#60a5fa;
+    margin:10px 0;
+}
+
+p{
+    max-width:650px;
+    margin:20px auto;
+    color:#ddd;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 30px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:70px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.portfolio{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.portfolio:hover{
+    transform:translateY(-8px);
+}
+
+.portfolio video{
+    width:100%;
+    height:220px;
+    background:black;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h2{
+    margin-bottom:10px;
+}
+
+.skill{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill span{
+    background:#2563eb;
+    padding:12px 20px;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+}
+
+.wa-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="card">
+
+<img src="PotoProfile1.jpg" class="profile">
+
+<h1>Salman Alfarishi</h1>
+
+<h3>• Video Editor</h3>
+
+<p>
+Saya seorang editor video dan foto yang berpengalaman dalam
+mengedit konten YouTube, TikTok, Instagram Reels, Company Profile,
+Wedding, Cinematic, dan berbagai kebutuhan editing lainnya.
+</p>
+
+<a class="btn" href="https://wa.me/6283862504596" target="_blank">
+Hubungi Saya
+</a>
+
+</div>
+
+</header>
+
+<section>
+
+<h1 class="title">Portfolio</h1>
+
+<div class="grid">
+
+<div class="portfolio">
+<video controls poster="thumbnail1.png">
+<source src="project1.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+<div class="portfolio">
+<video controls poster="thumbnail2.png">
+<source src="project2.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 class="title">Keahlian</h1>
+
+<div class="skill">
+
+<span>Adobe Premiere Pro</span>
+<span>After Effects</span>
+<span>CapCut Pro</span>
+<span>DaVinci Resolve</span>
+<span>Motion Graphics</span>
+<span>Color Grading</span>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Terima Kasih Telah Berkunjung</h2>
+<p>© 2026 Salman Alfarishi</p>
+
+</footer>
+
+<a class="wa-float" href="https://wa.me/6283862504596" target="_blank">
+💬
+</a>
+
+</body>
+</html>
