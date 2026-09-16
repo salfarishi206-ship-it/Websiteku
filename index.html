@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <!-- Google Fonts & FontAwesome untuk Ikon Sosial Media -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #1e293b;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #38bdf8;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f8fafc;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .social-link i {
+            font-size: 20px;
+        }
+
+        /* Warna Khas Masing-masing Platform saat Disorot */
+        .social-link.whatsapp:hover {
+            background-color: #25d366;
+            color: white;
+            border-color: #25d366;
+        }
+
+        .social-link.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            border-color: transparent;
+        }
+
+        .social-link.discord:hover {
+            background-color: #5865F2;
+            color: white;
+            border-color: #5865F2;
+        }
+
+        .social-link.shopee:hover {
+            background-color: #ee4d2d;
+            color: white;
+            border-color: #ee4d2d;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Foto Profil (Ganti link gambar dengan foto Anda) -->
+        <img src=".jpg" class="profile-img">
+        
+        <!-- Nama Anda -->
+        <h1 class="profile-name">Salman Alfarishi</h1>
+        
+        <!-- Bio Singkat -->
+        <p class="profile-bio">Selamat datang di tautan profil saya! Hubungi saya atau kunjungi toko saya melalui tautan di bawah ini.</p>
+        
+        <!-- Daftar Tautan Kontak & Media Sosial -->
+        <div class="link-container">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6283862504596" class="social-link whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/slmn_1710" class="social-link instagram" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discord.com/users/4rc9yhyq" class="social-link discord" target="_blank">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+
+            <!-- Shopee -->
+            <a href="https://id.shp.ee/ay6t0i6h?fromSource=copy_link&smtt=0.0.9" class="social-link shopee" target="_blank">
+                <i class="fa-solid fa-bag-shopping"></i> Shopee
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Salman Alfarishi. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
